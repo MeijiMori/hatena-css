@@ -14,8 +14,6 @@ a:hover font{
   color: #0f8f5f;
 }
 
-
-
 div#simple-header{
   color: #afafaf;
   background-color: #2f2f3f;
@@ -83,7 +81,7 @@ h1{
   background-color: #fff0fa;
   font-family: monospace;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   text-decoration: underline;
   text-shadow: 5px 5 0px #2f5f3f 3px 3px 1px #3f3f8f;
   font-weight: bold;
@@ -118,8 +116,8 @@ p.pager{
 
 p.pager b{
   padding: 1px 5px;
-  color: #1f1f3f;
-  background-color: #2f6fcf;
+  color: #1f2f5f;
+  background-color: #5f8fff;
   font-family: monospace;
   font-style: normal;
   text-decoration: underline;
@@ -206,6 +204,11 @@ span.modified{
   border-top: 2px solid #8f2f5f;
   border-right: 2px solid #8f2f5f;
   border-bottom: 2px solid #8f2f5f;
+}
+
+span.author{
+  color: #cf2f2f;
+  font-size: 13px;
 }
 
 .sidebar{
