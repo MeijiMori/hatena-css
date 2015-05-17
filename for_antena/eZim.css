@@ -28,29 +28,35 @@ form.search-form{
 }
 
 input.search-word{
-  color: #3f3f3f;
-  background-color: #cfdfaf;
+  color: #cfcfcf;
+  background-color: #2f2f2f !important;
   border-style: solid;
-  border-width: 2px;
-  border-color: #5fafff;
+  border-width: 1px !important;
+  border-color: #5fafff !important;
 }
 
 input.search-word:focus{
-  outline: 1px solid #0f3f5f;
+  outline: 1px solid #0f3f5f !important;
+}
+
+input.search-button{
+  color: #cfcfcf !important;
+  background-color: #3f3f3f !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0f0f0f !important;
 }
 
 ul.menu{
-  margin: 20px;
-  padding: 10px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
   text-align: center;
-  position: center;
   color: #0f0f1f;
-  background-color: #2f3f5f;
-  border-style: double;
-  border-left: 2px solid #0f1f3f;
-  border-top: 2px solid #0f1f3f;
-  border-right: 2px solid #0f1f3f;
-  border-bottom: 2px solid #0f1f3f;
+  background-color: #1f2f4f;
+  border-style: groove;
+  border-width: 1px;
+  border-color:  #000f2f;
 }
 
 ul.menu a{
@@ -71,13 +77,13 @@ li{
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  position: center;
+  position: left;
   color: #cf0f2f;
 }
 
 h1{
   padding: 58px 25px 0 25px;
-  color: #0f5f5f;
+  color: #5f0f3f;
   background-color: #fff0fa;
   font-family: monospace;
   font-style: normal;
@@ -94,6 +100,9 @@ h1{
 ol{
   color: #cf0f2f;
   background-color: #fff0f8;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #af5f8f;
 }
 
 p{
@@ -130,9 +139,9 @@ p.pager b{
 }
 
 p.pager a{
+  padding: 1px 5px;
   color: #2f5f3f;
   background-color: none;
-  padding: 1px 5px;
   font-size: normal;
   text-decoration: none;
 }
@@ -144,18 +153,16 @@ p.pager a:hover{
 }
 
 p.diff{
-  color: #0f0f0f;
-  background-color: #eff0ff;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
+  color: #0f0f0f;
+  background-color: #fcecf5;
   text-align: left;
   clear: none;
-  border-style: groove;
-  border-radius: 10px;
-  border-left: 1px solid #2f2f2f;
-  border-top: 1px solid #2f2f2f;
-  border-right: 1px solid #2f2f2f;
-  border-bottom: 1px solid #2f2f2f;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #8f2f5f;
 }
 
 p.diff:after{
@@ -197,13 +204,13 @@ span.modified{
   font-family: monospace;
   font-style: normal;
   text-decoration: none;
-  text-shadow: 5px 5px 1px #2f5f3f 3px 3px 5px #3f3f8f;
+  text-shadow: 10px 10px 10px #2f3f5f 3px 3px 5px #cf5fff;
   font-weight: normal;
-  border-style: groove;
-  border-left: 2px solid #8f2f5f;
-  border-top: 2px solid #8f2f5f;
-  border-right: 2px solid #8f2f5f;
-  border-bottom: 2px solid #8f2f5f;
+  border-style: solid;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 3px double #af2f5f;
+  border-left: 0px;
 }
 
 span.author{
@@ -264,7 +271,11 @@ div.footer{
 
 /* -*- hatena-body -*- */
 .hatena-body{
-  background-color: #fff0fa;
+  color: #5f5f5f;
+  background-color: #faf0f3;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3f3f5f;
 }
 
 .hatena-body:after{
@@ -291,6 +302,13 @@ div.footer{
 
 /* -*- hatena-antenna-normal -*- */
 #hatena-antenna-normal{
+}
+
+#hatena-antenna-normal li{
+  text-align: left;
+}
+
+#hatena-antenna-normal span.modified{
 }
 
 /* -*- hatena-antenna-simple -*- */
@@ -337,7 +355,7 @@ div.footer{
 
 #hatena-antenna-detail li{
   font-size: 12.5px;
-  text-align: center;
+  text-align: left;
 }
 
 #hatena-antenna-detail span.modified{
@@ -363,4 +381,13 @@ div.footer{
 #hatena-antenna-image span.author{
   font-size: 10.5px;
 }
+
+div#google_afc{
+  display: none !important;
+}
+
+div.double-rectangle{
+  display: none !important;
+}
+
 
