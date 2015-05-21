@@ -1,20 +1,25 @@
-body{
+body {
   margin: 0;
   color: #000000;
   text-align: center;
   background: #ffdff0 center top;
 }
 
-a{
+a {
   color: #2f2f8f;
 }
 
 a:hover,
-a:hover font{
+a:hover font {
   color: #0f8f5f;
 }
 
-div#simple-header{
+a.keyword {
+  background-color: #0f0f0f;
+  border-bottom: 10px solid #2f4f8f !important;
+}
+
+div#simple-header {
   color: #afafaf;
   background-color: #2f2f3f;
   border-style: groove;
@@ -24,10 +29,10 @@ div#simple-header{
   border-bottom: 5px solid #2f1f3f;
 }
 
-form.search-form{
+form.search-form {
 }
 
-input.search-word{
+input.search-word {
   color: #cfcfcf;
   background-color: #2f2f2f !important;
   border-style: solid;
@@ -73,11 +78,11 @@ ul.menu a:hover{
   background-color: #0f2f5f;
 }
 
-li{
+li {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  position: left;
+  position: static;
   color: #cf0f2f;
 }
 
@@ -89,7 +94,7 @@ h1{
   font-style: normal;
   text-align: center;
   text-decoration: underline;
-  text-shadow: 5px 5 0px #2f5f3f 3px 3px 1px #3f3f8f;
+  /* text-shadow: 5px 5px 0px #2f5f3f, 3px 3px 1px #3f3f8f; */
   font-weight: bold;
   font-size: large;
   font-stretch: normal;
@@ -117,7 +122,7 @@ p.pager{
   background-color: #fff0f8;
   text-align: center;
   font-family: monospace;
-  font-size: normal;
+  font-size: medium;
   font-weight: normal;
   border-width: 2px 2px 2px 2px;
   border-color: #353f2f;
@@ -130,9 +135,9 @@ p.pager b{
   font-family: monospace;
   font-style: normal;
   text-decoration: underline;
-  text-shadow: 5px 5px 1px #2f5f3f 3px 3px 5px #3f3f8f;
+  /* text-shadow: 5px 5px 1px #2f5f3f, 3px 3px 5px #3f3f8f; */
   font-weight: bold;
-  font-size: normal;
+  font-size: medium;
   font-stretch: normal;
   letter-spacing: 10px;
   line-height: normal;
@@ -141,8 +146,8 @@ p.pager b{
 p.pager a{
   padding: 1px 5px;
   color: #2f5f3f;
-  background-color: none;
-  font-size: normal;
+  background-color: transparent;
+  font-size: medium;
   text-decoration: none;
 }
 
@@ -204,7 +209,7 @@ span.modified{
   font-family: monospace;
   font-style: normal;
   text-decoration: none;
-  text-shadow: 10px 10px 10px #2f3f5f 3px 3px 5px #cf5fff;
+  /* text-shadow: 10px 10px 10px #2f3f5f, 3px 3px 5px #cf5fff; */
   font-weight: normal;
   border-style: solid;
   border-top: 0px;
@@ -291,7 +296,7 @@ div.footer{
   width: auto;
 }
 
-.hatena-body*.sidebar{
+.hatena-body.sidebar{
 }
 
 .hatena-body table font,
@@ -358,7 +363,7 @@ div.footer{
   text-align: left;
 }
 
-#hatena-antenna-detail span.modified{
+span.modified #hatena-antenna-detail{
   margin: 0 0 6px 0;
   display: block;
 }
@@ -389,5 +394,4 @@ div#google_afc{
 div.double-rectangle{
   display: none !important;
 }
-
 
